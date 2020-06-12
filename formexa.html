@@ -1,0 +1,223 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Feedback-form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+   
+
+
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="exa.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script type="text/javascript" src=""></script>
+   
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
+</head>
+<body>
+<div class="form-box">
+    <h1>Feedback Form</h1>
+
+    <!-- // action="MAILTO:someone@example.com" method="post" enctype="text/plain" -->
+    
+    <form id="myForm" action="https://hooks.zapier.com/hooks/catch/7719229/osd33q6/" type="POST">
+      
+        <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate" name="fname">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate" name="lname">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input  id="uni" type="text" class="validate" name="uni">
+              <label for="uni">Your University or College Name.</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="branch" type="text" class="validate" name="branch">
+              <label for="branch">Branch/Stream</label>
+            </div>
+          </div>
+         
+      <div class="row">
+        <div class="input-field col s12">
+      <label for="tech">Which technology do you like the most?</label>
+      <input type="text" name="tech" list="techname" name="tech">
+    <datalist id="techname">
+        
+      <option value="Full-Stack Development"></option>
+      <option value="Android Development"></option>
+      <option value="IOT"></option>
+      <option value="Machine Learning"></option>
+    </datalist>
+        </div>
+</div>
+
+<div class=row>
+    <div class="input-field col s12">
+    <label for="radio">Are you excited to work with us?</label><br><br>
+    <p>
+        <label>
+          <input  type="radio" name="rad" value="Yes" checked />
+          <span>Yes</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input  type="radio" name="rad" value="No"/>
+          <span>No</span>
+        </label>
+      </p>
+  </div>
+</div>
+
+
+  <div class="row">
+    <div class="input-field col s12">
+      <textarea id="textarea2" class="materialize-textarea" data-length="120" name="textarea"></textarea>
+      <label for="textarea2">Tell us somthing, what you like about our platform?</label>
+    </div>
+  </div>
+  <div class="row">
+  <div class="input-field col s12">
+      <div class="stars">
+        <label for="rating">Rate our Platform.</label><br>
+
+        <input class="star star-1" id="star-1" type="radio" name="star1"/>
+        <label class="star star-1" for="star-1"></label>
+        
+        <input class="star star-2" id="star-2" type="radio" name="star2"/>
+        <label class="star star-2" for="star-2"></label>
+        <input class="star star-3" id="star-3" type="radio" name="star3"/>
+        <label class="star star-3" for="star-3"></label>
+
+        <input class="star star-4" id="star-4" type="radio" name="star4"/>
+        <label class="star star-4" for="star-4"></label>
+        
+        <input class="star star-5" id="star-5" type="radio" name="star5"/>
+        <label class="star star-5" for="star-5"></label>
+        </div>
+        </div>
+  </div>
+        <div class="row">
+            <div class="input-field col s12">
+            <label for="range">Rate yourself as a hardworking person.</label><br><br>
+        <p class="range-field">
+            <input type="range" id="test-slider" min="0" max="100" name="range"/>
+        
+          </p>
+        </div>
+
+        </div>
+<div class="row">
+    <div class="input-field col s12">
+    <label for="message">Your E-Signature:</label><br><br>
+    <div class="input-field col s6">
+    
+        <div id="signature" style='margin-left: 2px;'>
+        <canvas id="signature-pad" class="signature-pad" width="300px" height="200px" name="pad"></canvas>
+        <input type="hidden" name="signature-pad" id="signature" value="">
+      </div><br>
+      
+       <button id="clear-pad" value="clear" type="button">Clear</button>
+       <!-- <button id="click" value="preview">Save</button> -->
+       <button type='button' id='click' value='preview'>Save</button><br><br>
+    </div>
+    <div class="input-field col s6">
+       <div id="img-box" style="margin-left: 15px;">
+       <img src='' id='sign_prev' style='display: none;' name="sign"/>
+       </div>
+       <br>
+       <textarea id='output' name="signtext"></textarea><br/>
+    </div>
+  </div>
+    </div>
+    
+    <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" name="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <input class="btn btn-primary" type="submit" value="Submit" id="Form-submit"/>
+      <!-- <input type="submit" value="Submit"> -->
+      </div>
+
+       
+    </form>
+
+
+
+  </div>
+
+
+  <script>
+
+$(document).ready(function() {
+            var signaturePad = new SignaturePad(document.getElementById('signature-pad'));
+           
+             //Clear signature area
+            $('#clear-pad').on('click', function(){
+           signaturePad.clear();
+       });
+       
+            $('#click').click(function(){
+             var data = signaturePad.toDataURL('image/png');
+             $('#output').val(data);
+   
+             $("#sign_prev").show();
+             $("#sign_prev").attr("src",data);
+             // Open image in the browser
+             //window.open(data);
+            });
+           })
+   
+   
+        
+     
+     $("#myForm").submit(function(e) {
+       e.preventDefault();
+       $.ajax({
+         url: "https://hooks.zapier.com/hooks/catch/7719229/osd33q6/",
+         type: "post",
+         data: $("#myForm").serialize(),
+         success: function() {
+           // Redirect to another success page
+           alert("your response is submitted and sent successfully.");
+           // window.location = "http://google.com";
+         }
+       });
+     });
+
+    
+
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</body>
+</html>
